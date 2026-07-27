@@ -1,9 +1,35 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="refresh" content="0; url=/en/">
-  <title>NutriClarté</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body></body>
+<body>
+
+  <div class="container">
+    <!-- Top-Right Language Toggle -->
+    <div class="language-toggle">
+      <label for="lang-select" class="sr-only">Select Language</label>
+      <select id="lang-select" onchange="switchLanguage(this.value)">
+        <option value="en">English 🇬🇧</option>
+        <option value="fr">Français 🇫🇷</option>
+        <option value="es">Español 🇪🇸</option>
+      </select>
+    </div>
+
+    <!-- Main Content -->
+    <h1 data-data-i18n="welcome_title">Welcome</h1>
+    <p data-data-i18n="welcome_desc">Select a language from the top right toggle to test the switching feature.</p>
+
+    <ul>
+      <li><a href="support.html">Support</a></li>
+      <li><a href="privacy.html">Privacy</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+</body>
 </html>

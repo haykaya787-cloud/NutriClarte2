@@ -9,7 +9,7 @@
 <body>
 
   <div class="container">
-    <!-- Top-Right Language Toggle -->
+    <!-- Upper Right Language Toggle -->
     <div class="language-toggle">
       <label for="lang-select" class="sr-only">Select Language</label>
       <select id="lang-select" onchange="switchLanguage(this.value)">
@@ -19,27 +19,27 @@
       </select>
     </div>
 
-    <!-- Main Content -->
-    <h1>Contact Us</h1>
-    <p>Have a question or feedback? Complete the form below to reach our support team.</p>
+    <!-- Content with translation tags -->
+    <h1 data-data-i18n="contact_title">Contact Us</h1>
+    <p data-data-i18n="contact_desc">Have questions? Fill out the form below to get in touch with our team.</p>
 
     <form action="#" method="post">
       <div class="form-group">
-        <label for="name">Name</label>
+        <label for="name" data-data-i18n="label_name">Name</label>
         <input type="text" id="name" name="name" required placeholder="Your full name">
       </div>
 
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email" data-data-i18n="label_email">Email</label>
         <input type="email" id="email" name="email" required placeholder="name@example.com">
       </div>
 
       <div class="form-group">
-        <label for="message">Message</label>
+        <label for="message" data-data-i18n="label_message">Message</label>
         <textarea id="message" name="message" rows="5" required placeholder="Write your message here..."></textarea>
       </div>
 
-      <button type="submit">Send Message</button>
+      <button type="submit" data-data-i18n="btn_submit">Send Message</button>
     </form>
   </div>
 
